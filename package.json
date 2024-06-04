@@ -1,0 +1,26 @@
+{
+  "name": "tgcomments-to-excel-bot",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "ts-node api/bot.ts",
+    "dev": "cross-env NODE_ENV=development npm run build"
+  },
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "grammy": "^1.24.0",
+    "telegram": "^2.21.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.13",
+    "@vercel/node": "^3.1.5",
+    "cross-env": "^7.0.3",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
