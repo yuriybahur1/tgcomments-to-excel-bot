@@ -18,17 +18,23 @@ A Node.js Telegram bot that converts Telegram channel post comments to Excel, pr
 
 ## Installation
 
-1. **Install dependencies**
+1. Clone the repository:
+
+   ```shell
+   git clone https://github.com/yuriybahur1/tgcomments-to-excel-bot.git
+   ```
+
+2. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-2. **Create a `.env` file**
+3. **Create a `.env` file**
 
    Create a `.env` file in the root of the project directory.
 
-3. **Obtain a Bot Token**
+4. **Obtain a Bot Token**
 
    The bot requires a Bot Token to handle its logic via [grammY.js](https://grammy.dev). Use [BotFather](https://t.me/BotFather) to get the token, and then add it to your `.env` file:
 
@@ -36,7 +42,7 @@ A Node.js Telegram bot that converts Telegram channel post comments to Excel, pr
    BOT_TOKEN=YOUR_BOT_TOKEN
    ```
 
-4. **Obtain API ID and API Hash**
+5. **Obtain API ID and API Hash**
 
    The bot uses API ID and API Hash to fetch Telegram channel post comments via [gram.js](https://gram.js.org). Follow these steps to get them:
 
@@ -52,7 +58,7 @@ A Node.js Telegram bot that converts Telegram channel post comments to Excel, pr
    API_HASH=YOUR_API_HASH
    ```
 
-5. **Generate a Session**
+6. **Generate a Session**
 
    The bot uses a Session to avoid repeated logins to fetch comments. Run the following command and follow the instructions, entering your Telegram credentials when prompted. This is secure; see the [gram.js docs](https://github.com/gram-js/gramjs) and [utils/getSession.ts](./utils/getSession.ts) for more information.
 
