@@ -2,6 +2,14 @@
 
 A Node.js Telegram bot that converts Telegram channel post comments to Excel, preconfigured to run in [Vercel Serverless Functions](https://vercel.com/docs/functions).
 
+## Usage
+
+![UI of the bot](bot.png)
+
+1. Send post to bot.
+2. Or send copied post link to bot.
+3. That's it!
+
 ## Built with
 
 - [grammY.js](https://grammy.dev)
