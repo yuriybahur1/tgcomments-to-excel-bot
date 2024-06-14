@@ -38,6 +38,7 @@ A Node.js Telegram bot that converts Telegram channel post comments to Excel, pr
 
    ```bash
    git clone https://github.com/yuriybahur1/tgcomments-to-excel-bot.git
+   cd tgcomments-to-excel-bot
    ```
 
 2. **Install dependencies**
