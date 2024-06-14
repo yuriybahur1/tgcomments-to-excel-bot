@@ -75,23 +75,27 @@ A Node.js Telegram bot that converts Telegram channel post comments to Excel, pr
    SESSION=YOUR_SESSION
    ```
 
-## Running the Bot
+## Development
 
-- **Development mode**
+To start the development server:
 
-  ```bash
-  npm run dev
-  ```
-
-- **Production mode**
-
-  ```bash
-  npm run build
-  ```
+```bash
+npm run dev
+```
 
 ## Deployment
 
-Refer to the [Vercel documentation](https://vercel.com) for instructions on how to deploy the bot.
+Deploying the bot on Vercel is straightforward. Follow the [Vercel documentation](https://vercel.com/docs) for detailed instructions.
+
+The `vercel.json` configuration is already included:
+
+```json
+{
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "."
+}
+```
 
 ## License
 
