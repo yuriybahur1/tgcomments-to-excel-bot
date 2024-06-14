@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "ts-node api/bot.ts",
-    "dev": "cross-env NODE_ENV=development npm run build"
+    "dev": "cross-env NODE_ENV=development nodemon"
   },
   "keywords": [],
   "description": "",
@@ -19,6 +19,7 @@
     "@types/node": "^20.14.2",
     "@vercel/node": "^3.1.7",
     "cross-env": "^7.0.3",
+    "nodemon": "^3.1.3",
     "prettier": "^3.3.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
