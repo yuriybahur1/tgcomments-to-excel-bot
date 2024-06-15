@@ -8,7 +8,9 @@ export const forwardOriginMessageHandler = async (
   ctx: Context,
 ): Promise<void> => {
   try {
-    const { forward_origin, media_group_id } = ctx.message!;
+    if (!ctx.message) return;
+
+    const { forward_origin, media_group_id } = ctx.message;
 
     if (!forward_origin || forward_origin.type !== 'channel') return;
 

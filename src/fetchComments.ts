@@ -2,7 +2,7 @@ import type { Replies, Comment } from './types';
 import { formatDate } from './formatDate';
 import { getFullName } from './getFullName';
 
-export const fetchComments = async (replies: Replies): Promise<Comment[]> => {
+export const fetchComments = (replies: Replies): Comment[] => {
   const comments = replies.messages.reduce<Comment[]>((prev, cur) => {
     if (cur.message === '') return prev;
 
@@ -46,6 +46,7 @@ export const fetchComments = async (replies: Replies): Promise<Comment[]> => {
       ];
     }
 
+    // eslint-disable-next-line
     if (cur.fromId && cur.fromId.className === 'PeerChat') {
       const chatId = cur.fromId.chatId;
 

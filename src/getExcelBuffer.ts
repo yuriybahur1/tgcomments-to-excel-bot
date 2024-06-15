@@ -16,5 +16,5 @@ export const getExcelBuffer = (comments: Comment[]): Buffer => {
 
   XLSX.utils.sheet_add_aoa(worksheet, [headings], { origin: 'A1' });
 
-  return XLSX.write(workbook, { bookType: 'xlsx', type: 'buffer' });
+  return XLSX.write(workbook, { bookType: 'xlsx', type: 'buffer' }) as Buffer;
 };

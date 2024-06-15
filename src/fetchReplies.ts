@@ -37,6 +37,7 @@ export const fetchReplies = async (
           limit: 100,
           maxId: 0,
           minId: 0,
+          // eslint-disable-next-line
           // @ts-ignore
           hash: 0,
         }),
@@ -57,6 +58,8 @@ export const fetchReplies = async (
 
     return replies;
   } catch (err) {
+    console.error('Error fetching replies:', err);
+
     throw err;
   } finally {
     await apiClient.disconnect();

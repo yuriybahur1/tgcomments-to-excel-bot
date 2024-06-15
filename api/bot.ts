@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === 'development') {
 
   console.log('Bot started...');
 
-  bot.start();
+  void bot.start();
 }
 
 export default webhookHandler(bot);

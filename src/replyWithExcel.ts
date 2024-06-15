@@ -15,7 +15,7 @@ export const replyWithExcel = async (
   try {
     const replies = await fetchReplies(peer, msgId);
 
-    const comments = await fetchComments(replies);
+    const comments = fetchComments(replies);
 
     const excelBuffer = getExcelBuffer(comments);
 
