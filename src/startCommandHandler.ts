@@ -15,6 +15,6 @@ export const startCommandHandler = async (ctx: Context): Promise<void> => {
       );
     }
 
-    await ctx.reply('Sorry, something went wrong');
+    await ctx.reply(`Error: ${(err as Error).message}`);
   }
 };

@@ -21,8 +21,8 @@ export const pasteUrlMessageHandler = async (ctx: Context) => {
 
     await replyWithExcel(peer, msgId, ctx);
   } catch (err) {
-    console.error(`Failed to handle message:entities:url message`);
+    console.error(`Failed to handle message:entities:url message`, err);
 
-    await ctx.reply('Sorry, something went wrong');
+    await ctx.reply(`Error: ${(err as Error).message}`);
   }
 };
